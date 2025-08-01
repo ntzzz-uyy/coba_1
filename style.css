@@ -106,7 +106,7 @@ button {
 
 menu button span {
   display: none;
-  background-color: #ff8000;
+  background-color: #ffffff;
 }
 
 span img {
@@ -549,6 +549,7 @@ footer {
   justify-content: space-between;
   align-items: left;
   width: 100%;
+  position: absolute;
 }
 
 footer p {
@@ -699,3 +700,36 @@ footer p a {
   }
 }
 
+.footer {
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-content div {
+  flex: 1 1 200px;
+}
+
+.footer a {
+  color: yellow;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
